@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tab1"
+    android:orientation="vertical"
+    android:layout_weight="1"
+    android:background="@drawable/bg"
+    android:backgroundTintMode="multiply"
+    android:backgroundTint="@color/background">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data"
+        android:textSize="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/titleColor" />
+
+    <TextView
+        android:id="@+id/dataTextTab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:layout_gravity="center"
+        android:textColor="#325B81"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="28dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:clickable="true"
+            app:backgroundTint="@color/background"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_refresh_black_24dp"
+            android:onClick="refresh"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

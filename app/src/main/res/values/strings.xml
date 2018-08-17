@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BSU Weather Station</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="infoString">\n © 2018 ToualbiApps \n \n
+        Undergraduate Research Project \n \n Bridgewater State University \n \n Support: amtoualbi@gmail.com</string>
+</resources>
