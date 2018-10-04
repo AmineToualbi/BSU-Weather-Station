@@ -91,8 +91,11 @@ public class Menu extends AppCompatActivity {
                 final double longit = roundCoordinates(myLocation.getLongitude());
                 final double latit = roundCoordinates(myLocation.getLatitude());
 
-                deviceLongitude = longit;
-                deviceLatitude = latit;
+
+                   deviceLongitude = longit;
+                   deviceLatitude = latit;
+
+
 
                 MainActivity.showLocationPopup();
 
@@ -142,10 +145,17 @@ public class Menu extends AppCompatActivity {
     }
 
 
-    public static double roundCoordinates(double coordinate){    //function to round to 2 decimal places our GPS coordinates.
+    public double roundCoordinates(double coordinate){    //function to round to 2 decimal places our GPS coordinates.
 
         String result = String.format("%.2f", coordinate);
-        double roundedValue = Double.parseDouble(result);
+        double roundedValue = 0;
+        try{
+             roundedValue = Double.parseDouble(result);
+        }
+        catch(NumberFormatException ex){
+            Toast.makeText(Menu.this, "Error in determining location. Try again later.", Toast.LENGTH_LONG).show();
+        }
+
         return roundedValue;
 
     }
