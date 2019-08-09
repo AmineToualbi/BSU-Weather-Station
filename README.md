@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="150" height="150" src="https://github.com/AmineToualbi/BSUWeatherStation/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png">
+</p>
+
 # BSUWeatherStation
 
 This app was developed as an undergraduate research project during the Summer 2018 at Bridgewater State University, Massachusetts. 
